@@ -6,14 +6,6 @@ for i in xrange(0, T):
 
 for k in K:
 
-    maxk=0
-
-    for i in xrange(int((k/2)+1),1,-1):
-
-        j = k - i
-
-        if j*i > maxk:
-            maxk = j*i
-
-    print int(maxk)
-
+    l = k/2
+    r = k-l
+    print int(l*r)
